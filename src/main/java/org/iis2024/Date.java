@@ -102,4 +102,8 @@ public class Date {
     public void setLabel(String label) {
         this.label = label;
     }
+    
+    // Exercise 7: método añadido por el owner
+    public void methodAddedByOwner() {
+        System.out.println("Method added by the owner");
 }
