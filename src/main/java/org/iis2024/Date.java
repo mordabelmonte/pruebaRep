@@ -56,7 +56,7 @@ public class Date {
      * @param day The day of the month (1-31).
      * @param month The month of the year (1-12).
      * @param year The year (should ideally be within the valid range of 1900 to 2050 for validation
-     *             to pass).
+     * to pass).
      */
     public Date(int day, int month, int year) {
         this.day = day;
@@ -100,5 +100,10 @@ public class Date {
 
     public void setLabel(String label) {
         this.label = label;
+    }
+
+    // Exercise 7: método añadido por el owner
+    public void methodAddedByOwner() {
+        System.out.println("Method added by the owner");
     }
 }
