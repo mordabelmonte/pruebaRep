@@ -20,6 +20,9 @@ public class Date {
   private final int month;
   private final int year;
 
+  // Exercise 6: nueva variable de estado
+  private String label;
+
   /**
    * Retrieves the day component of this date.
    *
@@ -83,5 +86,19 @@ public class Date {
     } catch (ParseException e) {
       return false;
     }
+  }
+
+  // Exercise 6: nuevo método
+  public void printDate() {
+    System.out.println(day + "/" + month + "/" + year);
+  }
+
+  // Opcional: getters/setters para label si quieres usarlo
+  public String getLabel() {
+    return label;
+  }
+
+  public void setLabel(String label) {
+    this.label = label;
   }
 }
